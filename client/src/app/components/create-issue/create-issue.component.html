@@ -1,0 +1,18 @@
+<div class="create-issue">
+
+    <form>
+        <h1> Create New Issue </h1>
+
+        <select (change)="onSelectStatus($event.target)">
+            <option *ngFor="let status of stateService.statuses" value="{{status.id}}"> {{status.status}} </option>
+        </select>
+
+        <br>
+
+        <input type="text" name="summary" placeholder="New Issue Summary" [(ngModel)]="newIssueDetails.summary">
+
+        <br>
+
+        <button (click)="createIssue()"> Create Issue </button>
+    </form>
+</div>

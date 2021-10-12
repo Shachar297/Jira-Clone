@@ -1,0 +1,25 @@
+<div class="tasks">
+    <app-issue-card *ngFor="let issue of stateService.issues"
+    [summary]="issue.summary"
+    [Status]="issue.status"
+    [id]="issue.id"
+    (removeIssueChildEvent)="removeIssue($event)"
+    (setStatus)="setIssueStatus($event)"
+    ></app-issue-card>
+
+    <!-- <app-issue-card *ngFor="let issue of stateService.issuesInProgress"
+    [summary]="issue.summary"
+    [Status]="issue.status"
+    [id]="issue.id"
+    (removeIssueChildEvent)="removeIssue($event)"
+    ></app-issue-card>
+
+    <app-issue-card *ngFor="let issue of stateService.toDoIssues"
+    [summary]="issue.summary"
+    [Status]="issue.status"
+    [id]="issue.id"
+    (removeIssueChildEvent)="removeIssue($event)"
+    ></app-issue-card> -->
+
+
+</div>

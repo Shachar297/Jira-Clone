@@ -1,0 +1,55 @@
+.issue {
+  width: 45vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(51, 89, 214);
+  border: solid white 1px;
+}
+
+table {
+ width: 75%;
+}
+
+svg {
+  cursor: pointer;
+  margin: 1vw;
+}
+
+
+th{
+  font-size: 20px;
+}
+
+td{
+  font-size: 18px;
+  cursor:grabbing;
+
+}
+
+td:hover{
+  border-right: solid rgb(255,255,255,0.2) 1px;
+  border-left: solid rgb(255,255,255,0.2) 1px;
+
+  border-radius: 0.5vh;
+}
+
+.statusSelect{
+  background-color:rgb(212, 212, 212);
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+ul{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+li:hover{
+  border:solid rgba(75, 115, 247, 0.2) 1px;
+  transition: 0.2s;
+}

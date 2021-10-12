@@ -1,0 +1,14 @@
+.aside {
+  background-color: rgb(51, 89, 214);
+}
+
+.bi-arrow-left-circle-fill {
+  margin-left: 5vw;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
+.bi-arrow-left-circle-fill:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.2s;
+}

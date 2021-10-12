@@ -1,0 +1,21 @@
+<div class="header">
+    <span class="header-title">
+        Jira Tasks
+    </span>
+
+    <span class="header-customers">
+        <select name="" id="">
+            <option value="All Customers">All Customers </option>
+            <option *ngFor="let customer of stateService.customers" value="{{customer}}" >{{customer}}</option>
+        </select>
+    </span>
+
+    <span class="create-issue">
+        <button (click)="onCreateIssueButton()">Create</button>
+    </span>
+    <span class="header-links">
+        <select name="" id="">
+            <option *ngFor="let status of stateService.statuses" value="{{status}}">{{status}}</option>
+        </select>
+    </span>
+</div>

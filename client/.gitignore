@@ -1,0 +1,6 @@
+# Diff Sensitive Files Files
+
+*.json
+karma.conf.js
+.editorconfig
+.browserslistrc
